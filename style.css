@@ -1,0 +1,116 @@
+html {
+  font-size: 150%;
+  font-weight: 300;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  display: flex;
+  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+    box-shadow: 0 0 25 0 darkgray;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.calculator-display {
+    background-color: lightgray;
+    color: grey;
+    width: 16.25rem;
+    padding: .075rem 1rem;
+    text-align: right;
+    font-size: calc(1rem * 1.2 * 1.2);
+}
+.calculator-keys {
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    ". .  . ."
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal"
+    ;
+}
+#operation{
+    background-color: rgb(212, 117, 212);
+    color: black;
+}
+#operation:hover,
+#operation:focus{
+    background-color: violet;
+    color: black;
+}
+#number {
+    background-color: rgb(214, 214, 2);
+    color: black;
+}
+#number:hover,
+#number:focus {
+    background-color: yellow;
+    color: black;
+}
+#number-decimal {
+    background-color: rgb(214, 214, 2);
+    color: black;
+}
+#number-decimal:hover,
+#number-decimal:focus {
+    background-color: yellow;
+    color: black;
+}
+#number-clear {
+    background-color:rgb(214, 4, 4);
+    color: white;
+}
+#number-clear:hover,
+#number-clear:focus {
+    background-color:red;
+    color: white;
+}
+#equal {
+    background-color: rgb(24, 219, 24);
+    color: black;
+}
+#equal:hover,
+#equal:focus {
+    background-color: rgb(27, 245, 27);
+    color: black;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;}
+.three {
+    grid-area: three;}
+.four {
+    grid-area: four;}
+.five {
+    grid-area: five;}
+.six {
+    grid-area: six;}
+.seven {
+    grid-area: seven;}
+.eight {
+    grid-area: eight;}
+.nine {
+    grid-area: nine;}
+.zero {
+    grid-area: zero;}
+.decimal {
+    grid-area: decimal;}
+.clear{
+    grid-area: clear;}
+.equal {
+    grid-area: equal;
+}
+
